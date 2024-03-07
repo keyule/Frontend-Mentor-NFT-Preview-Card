@@ -21,9 +21,9 @@ export type NFTCardProps = {
 
 const NFTCard: React.FC<NFTCardProps> = ({ card }) => {
     return (
-        <div className="flex justify-center items-center h-screen bg-blue-950">
+        <div className="flex justify-center items-center h-screen bg-blue-bg">
             <div className=" w-full relative max-w-xs">
-                <div className="absolute inset-0 h-full w-full bg-gradient-to-r from-blue-500 to-teal-500 transform scale-[0.80] rounded-full blur-3xl" />
+                <div className="absolute inset-0 h-full w-full bg-gradient-to-r from-blue-500 to-teal-500 transform scale-[0.80] scale-y-[0.85] rounded-full blur-3xl" />
                     <div className="relative shadow-xl bg-gray-900 border border-gray-800 p-4 h-full overflow-hidden rounded-2xl">
                         <a href="#">
                             <div className="relative group">
@@ -37,7 +37,7 @@ const NFTCard: React.FC<NFTCardProps> = ({ card }) => {
                         <a href = "#">
                             <h5 className="text-xl font-bold text-white hover:text-emerald-400 transition-colors duration-300 mb-5">{card.title}</h5>
                         </a>
-                        <p className="text-blue-300 text-sm">{card.description}</p>
+                        <p className="text-blue-300">{card.description}</p>
                     </div>
                     <div className="flex justify-between mt-2 mb-4">
                         <div className="flex items-center">
@@ -49,12 +49,14 @@ const NFTCard: React.FC<NFTCardProps> = ({ card }) => {
                             <p className = "ml-2 text-blue-300">{card.daysLeft} days left</p>
                         </div>
                     </div>
-                    <div className= "border-t border-grey-100 border-opacity-50 pt-2">
-                    <div className="flex items-center">
+                    <div className= "border-t border-blue-200 border-opacity-20 pt-2">
+                    <div className="flex items-center mt-3">
                         <img src={card.creatorImageUrl} alt={`Creator ${card.creatorName}`} className="border-white border w-8 rounded-full mr-3" />
                         <div>
-                        <span className="text-sm font-bold text-blue-300">Creation of </span>
-                        <span className="text-sm text-white">{card.creatorName}</span>
+                        <span className="text-sm text-blue-300">Creation of </span>
+                        <a href = "#">
+                            <span className="text-sm text-white hover:text-emerald-400 transition-colors duration-300">{card.creatorName}</span>
+                        </a>
                         </div>
                     </div>
                     </div>

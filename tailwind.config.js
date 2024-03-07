@@ -6,6 +6,10 @@ export default {
   ],
   theme: {
     extend: {
+      colors:{
+        'blue-bg': '#0d192b',
+        'blue-line': '#2f415b',
+      },
       animation: {
         "meteor-effect": "meteor 5s linear infinite",
       },
@@ -18,6 +22,9 @@ export default {
             opacity: "0",
           },
         },
+      },
+      blur:{
+        xxl : '70px',
       }
     },
   },

@@ -5,7 +5,7 @@ import NFTCard, { Card } from './components/card';
 const cardData: Card = {
   title: "Equilibrium #3429",
   collectionName: "Equilibrium",
-  description: "Our Equilibrium collection promotes balance and calm.",
+  description: "Our Equilibrium collection promotes balance and calm. + Meteors! ",
   price: 0.041,
   daysLeft: 3,
   creatorName: "Jules Wyvern",

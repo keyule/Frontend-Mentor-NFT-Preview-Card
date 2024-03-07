@@ -9,8 +9,8 @@ const cardData: Card = {
   price: 0.041,
   daysLeft: 3,
   creatorName: "Jules Wyvern",
-  creatorImageUrl: "",
-  imageUrl: "",
+  creatorImageUrl: "https://raw.githubusercontent.com/keyule/Frontend-Mentor-NFT-Preview-Card/main/src/images/image-avatar.png",
+  imageUrl: "https://raw.githubusercontent.com/keyule/Frontend-Mentor-NFT-Preview-Card/main/src/images/image-equilibrium.jpg",
 };
 
 const App: React.FC = () => {
